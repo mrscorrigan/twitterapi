@@ -17,6 +17,6 @@ api = tweepy.API(auth)
 
 user = api.get_user('@madonna')
 
-for status in tweepy.Cursor(api.user_timeline, id="twitter").items(10):
+for status in tweepy.Cursor(api.user_timeline, id="@madonna").items(10):
     # Process a tweet
     print(status.text)
